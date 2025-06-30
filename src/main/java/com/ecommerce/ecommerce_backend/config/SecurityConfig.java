@@ -24,8 +24,9 @@ public class SecurityConfig {
         http
             .cors() // <- ¡Esto es lo que faltaba!
             .and()
-            // .csrf(csrf -> csrf.disable())
+            .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(authz -> authz
+                .requestMatchers("/send").permitAll()
                 .requestMatchers("/api/test").authenticated()
                 .anyRequest().permitAll()
             )
