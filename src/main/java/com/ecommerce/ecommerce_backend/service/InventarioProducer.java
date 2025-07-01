@@ -13,7 +13,7 @@ public class InventarioProducer {
     private RabbitTemplate rabbitTemplate;
 
     public void enviarInventario(InventarioDTO dto) {
-        System.out.println("📦 Enviando inventario a RabbitMQ: " + dto);
+        System.out.println(" Enviando inventario a RabbitMQ: " + dto);
         rabbitTemplate.convertAndSend("inventarioQueue", dto);
     }
 
