@@ -1,25 +1,25 @@
-package com.ecommerce.ecommerce_backend.controller;
+// package com.ecommerce.ecommerce_backend.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.web.bind.annotation.RestController;
 
-import com.ecommerce.ecommerce_backend.service.ProductorService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+// import com.ecommerce.ecommerce_backend.service.ProductorService;
+// import org.springframework.web.bind.annotation.PostMapping;
+// import org.springframework.web.bind.annotation.RequestParam;
 
 
-@RestController
-public class ProductorController {
+// @RestController
+// public class ProductorController {
 
-    @Autowired
-    private ProductorService producer;
+//     @Autowired
+//     private ProductorService producer;
 
-    @PostMapping("/send")
-    public String sendMessage(@RequestParam("message") String message) {
-        //TODO: process POST request
-        producer.sendMessage(message);
-        return "Mensaje enviado" + message;
-    }
+//     @PostMapping("/send")
+//     public String sendMessage(@RequestParam("message") String message) {
+//         //TODO: process POST request
+//         producer.sendMessage(message);
+//         return "Mensaje enviado" + message;
+//     }
     
 
-}
+// }

@@ -6,7 +6,7 @@ import lombok.Data;
 
 
 @Entity
-@Table(name = "ventas") // Asegúrate de que esta tabla exista en Oracle
+@Table(name = "ventas")
 @Data
 public class Venta {
 

@@ -1,78 +1,35 @@
 package com.ecommerce.ecommerce_backend.dto;
 
-import java.time.LocalDateTime;
+import java.io.Serializable;
 
-public class PromocionDTO {
+public class PromocionDTO implements Serializable {
+    private String productoId;
+    private String nombreProducto;
+    private int stockDisponible;
+    private int ventasTotales;
 
-    private String titulo;
-    private String descripcion;
-    private double descuento; // porcentaje (ej: 15.0)
-    private LocalDateTime fechaInicio;
-    private LocalDateTime fechaFin;
-
-    // Constructor vacío
-    public PromocionDTO() {
+    public String getProductoId() {
+        return productoId;
     }
-
-    // Constructor con parámetros
-    public PromocionDTO(String titulo, String descripcion, double descuento, LocalDateTime fechaInicio, LocalDateTime fechaFin) {
-        this.titulo = titulo;
-        this.descripcion = descripcion;
-        this.descuento = descuento;
-        this.fechaInicio = fechaInicio;
-        this.fechaFin = fechaFin;
+    public void setProductoId(String productoId) {
+        this.productoId = productoId;
     }
-
-    // Getters y Setters
-    public String getTitulo() {
-        return titulo;
+    public String getNombreProducto() {
+        return nombreProducto;
     }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setNombreProducto(String nombreProducto) {
+        this.nombreProducto = nombreProducto;
     }
-
-    public String getDescripcion() {
-        return descripcion;
+    public int getStockDisponible() {
+        return stockDisponible;
     }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setStockDisponible(int stockDisponible) {
+        this.stockDisponible = stockDisponible;
     }
-
-    public double getDescuento() {
-        return descuento;
+    public int getVentasTotales() {
+        return ventasTotales;
     }
-
-    public void setDescuento(double descuento) {
-        this.descuento = descuento;
+    public void setVentasTotales(int ventasTotales) {
+        this.ventasTotales = ventasTotales;
     }
-
-    public LocalDateTime getFechaInicio() {
-        return fechaInicio;
-    }
-
-    public void setFechaInicio(LocalDateTime fechaInicio) {
-        this.fechaInicio = fechaInicio;
-    }
-
-    public LocalDateTime getFechaFin() {
-        return fechaFin;
-    }
-
-    public void setFechaFin(LocalDateTime fechaFin) {
-        this.fechaFin = fechaFin;
-    }
-
-    @Override
-    public String toString() {
-        return "PromocionDTO{" +
-                "titulo='" + titulo + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", descuento=" + descuento +
-                ", fechaInicio=" + fechaInicio +
-                ", fechaFin=" + fechaFin +
-                '}';
-    }
-
 }
