@@ -1,13 +1,14 @@
-package com.ecommerce.ecommerce_backend.service;
+package com.ecommerce.ecommerce_backend.service.producers.impl;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ecommerce.ecommerce_backend.dto.InventarioDTO;
+import com.ecommerce.ecommerce_backend.service.producers.RabbitInventarioProducerService;
 
 @Service
-public class InventarioProducer {
+public class RabbitInventarioProducerServiceImpl implements RabbitInventarioProducerService {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;

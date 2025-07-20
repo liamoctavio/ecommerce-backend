@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ecommerce.ecommerce_backend.dto.VentaDTO;
-import com.ecommerce.ecommerce_backend.service.VentasProducer;
+import com.ecommerce.ecommerce_backend.service.producers.RabbitVentasProducerService;
 
 import java.time.format.DateTimeFormatter;
 
@@ -19,7 +19,7 @@ import java.time.format.DateTimeFormatter;
 public class VentasController {
 
     @Autowired
-    private VentasProducer ventasProducer;
+    private RabbitVentasProducerService ventasProducer;
 
     @PostMapping("/nueva")
     public String registrarVenta(@RequestParam String producto, @RequestParam double monto) {
