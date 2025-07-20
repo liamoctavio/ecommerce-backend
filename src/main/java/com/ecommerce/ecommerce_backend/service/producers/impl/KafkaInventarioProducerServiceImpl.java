@@ -1,7 +1,8 @@
-package com.ecommerce.ecommerce_backend.service.impl;
+package com.ecommerce.ecommerce_backend.service.producers.impl;
 
 import com.ecommerce.ecommerce_backend.dto.InventarioDTO;
-import com.ecommerce.ecommerce_backend.service.KafkaInventarioProducerService;
+import com.ecommerce.ecommerce_backend.service.producers.KafkaInventarioProducerService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;

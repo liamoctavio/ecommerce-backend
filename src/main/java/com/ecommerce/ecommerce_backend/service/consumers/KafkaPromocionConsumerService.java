@@ -1,4 +1,4 @@
-package com.ecommerce.ecommerce_backend.service;
+package com.ecommerce.ecommerce_backend.service.consumers;
 
 import com.ecommerce.ecommerce_backend.dto.PromocionDTO;
 

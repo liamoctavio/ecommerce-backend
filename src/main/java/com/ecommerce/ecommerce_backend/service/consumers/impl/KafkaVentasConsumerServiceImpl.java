@@ -1,8 +1,9 @@
-package com.ecommerce.ecommerce_backend.service.impl;
+package com.ecommerce.ecommerce_backend.service.consumers.impl;
 
 import com.ecommerce.ecommerce_backend.config.KafkaVentasConsumerConfig;
 import com.ecommerce.ecommerce_backend.dto.VentaDTO;
-import com.ecommerce.ecommerce_backend.service.KafkaVentasConsumerService;
+import com.ecommerce.ecommerce_backend.service.consumers.KafkaVentasConsumerService;
+
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.stereotype.Service;

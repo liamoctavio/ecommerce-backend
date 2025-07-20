@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ecommerce.ecommerce_backend.dto.InventarioDTO;
-import com.ecommerce.ecommerce_backend.service.KafkaInventarioProducerService;
+import com.ecommerce.ecommerce_backend.service.producers.KafkaInventarioProducerService;
 
 
 @RestController

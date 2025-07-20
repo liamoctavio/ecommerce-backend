@@ -1,4 +1,4 @@
-package com.ecommerce.ecommerce_backend.service.impl;
+package com.ecommerce.ecommerce_backend.service.consumers.impl;
 
 import com.ecommerce.ecommerce_backend.dto.InventarioDTO;
 import com.ecommerce.ecommerce_backend.dto.VentaDTO;
